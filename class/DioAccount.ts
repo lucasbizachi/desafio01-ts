@@ -22,14 +22,14 @@ export abstract class DioAccount {
     return this.accountNumber;
   }
 
-  deposit = (amount: number): void => {
+   public deposit = (amount: number): void => {
     if(this.validateStatus() && amount > 0 ) {
       this.balance += amount;
       console.log(`Você depositou ${amount}. Saldo atual: ${this.balance}`);
     }
   }
 
-  withdraw = (amount: number): void => {
+  public withdraw = (amount: number): void => {
     if(this.validateStatus() && this.balance >= amount && amount > 0) {
       this.balance-= amount;
       console.log(`Você sacou ${amount}. Saldo atual: ${this.balance}`)

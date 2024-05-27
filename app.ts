@@ -1,6 +1,6 @@
 import { PeopleAccount } from './class/PeopleAccount';
 import { CompanyAccount } from './class/CompanyAccount';
-//import { SpecialAccount } from './class/SpecialAccount';
+import { SpecialAccount } from './class/SpecialAccount';
 
 const peopleAccount: PeopleAccount = new PeopleAccount(1, 'Nath', 10);
 console.log(peopleAccount);
@@ -15,8 +15,8 @@ companyAccount.getLoan(200);
 companyAccount.withdraw(150);
 console.log(companyAccount.getBalance());
 
-//const specialAccount: SpecialAccount = new SpecialAccount('VIP', 30);
-//console.log(specialAccount);
-//specialAccount.deposit(100);
-//specialAccount.withdraw(50);
-//console.log(specialAccount.getBalance());
+const specialAccount: SpecialAccount = new SpecialAccount('VIP', 30);
+console.log(specialAccount);
+specialAccount.deposit(100);
+specialAccount.withdraw(50);
+console.log(specialAccount.getBalance());
